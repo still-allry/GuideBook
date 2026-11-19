@@ -14,26 +14,6 @@ Plugin dokumentasi server Minecraft dalam satu buku. Satu command membuka seluru
 - Java 21
 - Maven 3.9 atau lebih baru untuk build
 
-## Build
-
-Jalankan di server atau mesin build:
-
-```sh
-bash build.sh
-```
-
-Hasil build:
-
-```text
-target/BookGuide-1.0.0.jar
-```
-
-Versi Paper API bisa diganti tanpa mengedit pom:
-
-```sh
-PAPER_VERSION=1.21.4-R0.1-SNAPSHOT bash build.sh
-```
-
 ## Instalasi
 
 1. Salin `BookGuide-1.0.0.jar` ke folder `plugins` server.

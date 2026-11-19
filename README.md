@@ -1,66 +1,70 @@
 # Book Guide
 
-Plugin dokumentasi server Minecraft dalam satu buku. Satu command membuka seluruh panduan, dengan daftar isi dan navigasi halaman yang bisa diklik.
+A Minecraft server documentation plugin delivered as a single book. One command opens the complete handbook, with a clickable table of contents and page navigation.
 
 - Name: Book Guide
 - Author: allry_
 - Command: `/guide`
-- Permission pemain: `bookguide.use`
-- Permission admin: `bookguide.admin`
+- Player permission: `bookguide.use`
+- Admin permission: `bookguide.admin`
 
-## Kebutuhan
+## Requirements
 
-- Paper 1.21.4 atau versi yang kompatibel
+- Paper 1.21.4 or a compatible version
 - Java 21
-- Maven 3.9 atau lebih baru untuk build
+- Maven 3.9 or newer for building
 
-## Instalasi
+## Installation
 
-1. Salin `BookGuide-1.0.0.jar` ke folder `plugins` server.
-2. Jalankan server sekali agar `plugins/BookGuide/guide.yml` dibuat.
+1. Copy `BookGuide-1.0.0.jar` into the server `plugins` folder.
+2. Start the server once so `plugins/BookGuide/guide.yml` is created.
 3. Edit `guide.yml`.
-4. Jalankan `/guide reload` sebagai admin.
+4. Run `/guide reload` as an admin.
 
-## Command
+## Commands
 
-| Command | Fungsi | Permission |
+| Command | Function | Permission |
 |---|---|---|
-| `/guide` | Membuka buku Server Guide | `bookguide.use` |
-| `/guide reload` | Memuat ulang `guide.yml` dan memvalidasi isi | `bookguide.admin` |
+| `/guide` | Opens the Server Guide book | `bookguide.use` |
+| `/guide reload` | Reloads and validates `guide.yml` | `bookguide.admin` |
 
-## Pengelolaan konten
+## Content management
 
-Semua dokumentasi berada di satu file `guide.yml`. Setiap kategori punya daftar `pages`, dan setiap halaman punya daftar `lines`.
+All documentation lives in a single `guide.yml` file. Each section has a list of `pages`, and each page has a list of `lines`.
 
-- Ubah urutan kategori dengan mengubah urutan item di `sections`.
-- Tambah halaman dengan menambah item baru di `pages`.
-- Hapus halaman dengan menghapus item dari `pages`.
-- Ubah command atau deskripsi dengan mengedit baris teks.
-- Teks mendukung MiniMessage dan kode warna lama seperti `&a` atau `&l`.
-- Daftar isi menampilkan satu baris per bab, berisi judul dan nomor halaman yang bisa diklik. Untuk 7 bab default, daftar isi muat dalam satu halaman.
-- Nomor halaman, header bab, tombol kembali ke daftar isi, dan tombol halaman sebelumnya atau berikutnya dibuat otomatis.
-- Plugin menolak konten yang terlalu panjang atau melebihi 100 halaman. Perbaiki `guide.yml` lalu jalankan `/guide reload` lagi.
+- Reorder sections by changing their order under `sections`.
+- Add a page by adding an item under `pages`.
+- Remove a page by deleting the item from `pages`.
+- Change commands or descriptions by editing the text lines.
+- Text supports MiniMessage and legacy color codes such as `&a` or `&l`.
+- The table of contents shows one clickable line per section with its page number. The default seven sections fit on one page.
+- Page numbers, section headers, the back-to-contents button, and previous/next buttons are generated automatically.
+- The plugin rejects content that is too long or exceeds 100 pages. Fix `guide.yml` and run `/guide reload` again.
 
-Contoh format:
+Example format:
 
 ```yaml
 sections:
-  - title: "Contoh Bab"
+  - title: "Example Section"
     pages:
       - lines:
-          - "<yellow><bold>Judul Halaman</bold></yellow>"
-          - "<gray>Penjelasan singkat.</gray>"
+          - "<yellow><bold>Page Title</bold></yellow>"
+          - "<gray>A short explanation.</gray>"
 ```
 
-Satu item di `pages` menjadi satu halaman buku. Jika isi terlalu panjang, plugin membaginya menjadi beberapa halaman buku secara otomatis dan seimbang.
+Each item under `pages` becomes one book page. If the content is too long, the plugin splits it into multiple balanced book pages automatically.
 
-### Menulis parameter command
+### Command parameters
 
-Kurung sudut adalah tag MiniMessage. Tulis parameter command dengan backslash agar tampil apa adanya:
+Angle brackets are MiniMessage tags. Escape command parameters with a backslash so they render literally:
 
 ```yaml
 - '<aqua>/tpa \<player></aqua>'
 - '<aqua>/buyclaimblocks \<amount></aqua>'
 ```
 
-Tanpa backslash, `<player>` dan `<amount>` dianggap tag dan bisa membuat validasi gagal atau teksnya hilang.
+Without the backslash, `<player>` and `<amount>` are treated as tags and can fail validation or disappear from the text.
+
+## License
+
+MIT. See [LICENSE](LICENSE).

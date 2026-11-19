@@ -84,7 +84,3 @@ Kurung sudut adalah tag MiniMessage. Tulis parameter command dengan backslash ag
 ```
 
 Tanpa backslash, `<player>` dan `<amount>` dianggap tag dan bisa membuat validasi gagal atau teksnya hilang.
-
-## Catatan konten
-
-Bagian Custom Pet Egg memakai detail yang tersedia di spesifikasi: item referensi, peluang drop, mekanisme altar, empat charge, dan daftar pet. Durasi hitung mundur, struktur altar lengkap, serta detail efek harus disesuaikan dengan `PetsAltar.sk` yang dipakai server. Bagian aturan server juga menyebut aturan umum dan menyerahkan sanksi kepada staff, bukan mengarang aturan baru.

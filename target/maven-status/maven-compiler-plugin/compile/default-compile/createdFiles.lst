@@ -1,0 +1,12 @@
+com/allry/bookguide/GuideBookBuilder.class
+com/allry/bookguide/GuideContent.class
+com/allry/bookguide/GuideContent$LoadException.class
+com/allry/bookguide/BookGuidePlugin.class
+com/allry/bookguide/GuideBookBuilder$StyledChar.class
+com/allry/bookguide/TextParser$ParseException.class
+com/allry/bookguide/GuideCommand.class
+com/allry/bookguide/GuideBookBuilder$SectionLayout.class
+com/allry/bookguide/GuideBookBuilder$BuildResult.class
+com/allry/bookguide/GuideContent$Section.class
+com/allry/bookguide/GuideBookBuilder$ContentPage.class
+com/allry/bookguide/TextParser.class

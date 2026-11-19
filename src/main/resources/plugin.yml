@@ -1,0 +1,21 @@
+name: "Book Guide"
+version: "1.0.0"
+main: com.allry.bookguide.BookGuidePlugin
+api-version: "1.21"
+author: allry_
+description: "An interactive Minecraft server handbook containing comprehensive guides, commands, gameplay information, and server documentation in one book."
+
+commands:
+  guide:
+    description: "Opens the Server Guide book."
+    usage: "/guide"
+
+permissions:
+  bookguide.use:
+    description: "Allows opening the Server Guide book."
+    default: true
+  bookguide.admin:
+    description: "Allows reloading guide.yml."
+    default: op
+    children:
+      bookguide.use: true

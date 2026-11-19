@@ -1,0 +1,313 @@
+# Semua dokumentasi berada di file ini. Setiap item di pages menjadi satu halaman buku.
+
+book:
+  title: "Server Guide"
+  author: "allry_"
+  description: "Complete Minecraft Server Handbook"
+  intro: "Semua panduan dalam satu buku."
+  toc-title: "Daftar Isi"
+  toc-hint: "Klik judul bab."
+
+sections:
+  - title: "Getting Started"
+    pages:
+      - lines:
+          - "<yellow><bold>Selamat Datang</bold></yellow>"
+          - "<gray>Guide ini adalah pusat dokumentasi server.</gray>"
+          - "<gray>Semua panduan penting ada di satu buku.</gray>"
+          - "<gray>Baca dulu sebelum mulai bermain.</gray>"
+          - "<gray>Buka dengan </gray><aqua>/guide</aqua><gray> kapan saja.</gray>"
+      - lines:
+          - "<yellow><bold>Informasi Dasar</bold></yellow>"
+          - "<gray>Server berjalan di Paper.</gray>"
+          - "<gray>Fitur utama: klaim, ekonomi, jobs, skill, pet.</gray>"
+          - "<gray>Setiap fitur punya bab sendiri.</gray>"
+          - "<gray>Daftar isi ada di bagian bawah.</gray>"
+      - lines:
+          - "<yellow><bold>Mulai Bermain</bold></yellow>"
+          - "<gray>1. Masuk ke server.</gray>"
+          - "<gray>2. Baca aturan server.</gray>"
+          - "<gray>3. Kumpulkan resource.</gray>"
+          - "<gray>4. Klaim lahan dengan golden shovel.</gray>"
+          - "<gray>5. Cek </gray><aqua>/shop</aqua><gray>, </gray><aqua>/jobs</aqua><gray>, dan </gray><aqua>/skill</aqua><gray>.</gray>"
+      - lines:
+          - "<yellow><bold>Info Pemain Baru</bold></yellow>"
+          - "<gray>- Simpan rumah dengan </gray><aqua>/sethome</aqua><gray>.</gray>"
+          - "<gray>- Lindungi area dengan klaim.</gray>"
+          - "<gray>- Cek ekonomi lewat </gray><aqua>/shop</aqua><gray>.</gray>"
+          - "<gray>- Lihat pekerjaan lewat </gray><aqua>/jobs</aqua><gray>.</gray>"
+          - "<gray>- Buka </gray><aqua>/guide</aqua><gray> jika lupa command.</gray>"
+
+  - title: "Server Commands"
+    pages:
+      - lines:
+          - "<yellow><bold>Teleport & Home</bold></yellow>"
+          - '<aqua>/tpa \<player></aqua>'
+          - "<gray>Meminta teleport ke pemain lain.</gray>"
+          - "<aqua>/sethome</aqua>"
+          - "<gray>Menyimpan lokasi rumah saat ini.</gray>"
+          - "<aqua>/home</aqua>"
+          - "<gray>Kembali ke rumah yang sudah disimpan.</gray>"
+      - lines:
+          - "<yellow><bold>Ekonomi</bold></yellow>"
+          - "<aqua>/shop</aqua>"
+          - "<gray>Membuka toko server.</gray>"
+          - "<aqua>/sell</aqua>"
+          - "<gray>Menjual item lewat sistem ekonomi.</gray>"
+          - "<gray>Harga dan item mengikuti konfigurasi server.</gray>"
+      - lines:
+          - "<yellow><bold>Jobs & Skills</bold></yellow>"
+          - "<aqua>/jobs</aqua>"
+          - "<gray>Menampilkan informasi pekerjaan.</gray>"
+          - "<aqua>/skill</aqua>"
+          - "<gray>Menampilkan informasi skill dan perkembangannya.</gray>"
+          - "<gray>Detail ada di bab Jobs & Skills.</gray>"
+      - lines:
+          - "<yellow><bold>Catatan Command</bold></yellow>"
+          - "<gray>Parameter dan perilaku command mengikuti plugin yang terpasang.</gray>"
+          - "<gray>Jika command tidak berjalan, cek izin dan hubungi staff.</gray>"
+          - "<gray>Daftar command lain ada di bab masing-masing.</gray>"
+
+  - title: "Land Claim"
+    pages:
+      - lines:
+          - "<yellow><bold>Pengenalan Klaim</bold></yellow>"
+          - "<gray>Klaim melindungi area dari perubahan pemain lain.</gray>"
+          - "<gray>Sistem ini memakai GriefPrevention.</gray>"
+          - "<gray>Setiap pemain bisa membuat klaim sendiri.</gray>"
+          - "<gray>Klaim memakai claim blocks.</gray>"
+      - lines:
+          - "<yellow><bold>Cara Klaim Lahan</bold></yellow>"
+          - "<gray>1. Pegang golden shovel.</gray>"
+          - "<gray>2. Klik kanan tanah di sudut pertama.</gray>"
+          - "<gray>3. Klik kanan sudut berlawanan.</gray>"
+          - "<gray>4. Klaim terbentuk jika blok cukup.</gray>"
+          - "<gray>Ikuti pesan chat.</gray>"
+      - lines:
+          - "<yellow><bold>Golden Shovel</bold></yellow>"
+          - "<gray>Golden shovel membuat dan mengubah klaim.</gray>"
+          - "<gray>Klik kanan untuk memilih titik.</gray>"
+          - "<gray>Ikuti petunjuk chat GriefPrevention.</gray>"
+          - "<gray>Simpan alat saat mengatur klaim.</gray>"
+      - lines:
+          - "<yellow><bold>Pilih Sudut</bold></yellow>"
+          - "<gray>Dua sudut membentuk persegi klaim.</gray>"
+          - "<gray>Pilih sudut berlawanan, bukan bersebelahan.</gray>"
+          - "<gray>Luas klaim: panjang x lebar.</gray>"
+          - "<gray>Pastikan area belum dimiliki pemain lain.</gray>"
+      - lines:
+          - "<yellow><bold>Claim Blocks</bold></yellow>"
+          - "<gray>Claim blocks adalah biaya klaim.</gray>"
+          - "<gray>Blok bertambah tiap jam.</gray>"
+          - "<gray>Awal: 100.</gray>"
+          - "<gray>Tambah default: 100 per jam.</gray>"
+          - "<gray>Maksimum default: 80.000.</gray>"
+          - "<gray>Nilai bisa berbeda.</gray>"
+      - lines:
+          - "<yellow><bold>Batas Klaim</bold></yellow>"
+          - "<gray>Pegang stick lalu klik kanan.</gray>"
+          - "<gray>Chat menampilkan informasi klaim.</gray>"
+          - "<gray>Batas klaim juga ditampilkan di dunia.</gray>"
+          - "<gray>Gunakan </gray><aqua>/claimslist</aqua><gray> untuk daftar klaimmu.</gray>"
+      - lines:
+          - "<yellow><bold>Trust Bangun</bold></yellow>"
+          - '<aqua>/trust \<player></aqua>'
+          - "<gray>Izinkan membangun dan mengubah klaim.</gray>"
+          - '<aqua>/containertrust \<player></aqua>'
+          - "<gray>Akses peti, crafting, hewan, tombol, tuas, dan tempat tidur.</gray>"
+      - lines:
+          - "<yellow><bold>Trust Akses</bold></yellow>"
+          - '<aqua>/accesstrust \<player></aqua>'
+          - "<gray>Akses tombol, tuas, dan tempat tidur.</gray>"
+          - '<aqua>/permissiontrust \<player></aqua>'
+          - "<gray>Izinkan pemain membagikan trust di klaimmu.</gray>"
+      - lines:
+          - "<yellow><bold>Cabut Trust</bold></yellow>"
+          - '<aqua>/untrust \<player></aqua>'
+          - "<gray>Cabut semua trust pemain itu.</gray>"
+          - "<aqua>/trustlist</aqua>"
+          - "<gray>Lihat daftar pemain yang dipercaya.</gray>"
+      - lines:
+          - "<yellow><bold>Daftar Klaim</bold></yellow>"
+          - "<aqua>/claimslist</aqua>"
+          - "<gray>Menampilkan daftar klaimmu.</gray>"
+          - "<gray>Ubah ukuran klaim dengan golden shovel.</gray>"
+          - "<gray>Klik sudut klaim, lalu sudut baru.</gray>"
+          - "<gray>Ikuti petunjuk chat GriefPrevention.</gray>"
+      - lines:
+          - "<yellow><bold>Hapus Klaim</bold></yellow>"
+          - "<aqua>/abandonclaim</aqua>"
+          - "<gray>Hapus klaim tempat kamu berdiri.</gray>"
+          - "<aqua>/abandonallclaims</aqua>"
+          - "<gray>Hapus semua klaimmu.</gray>"
+      - lines:
+          - "<yellow><bold>Jual Beli Blok</bold></yellow>"
+          - '<aqua>/buyclaimblocks \<amount></aqua>'
+          - "<gray>Membeli claim blocks dengan uang.</gray>"
+          - '<aqua>/sellclaimblocks \<amount></aqua>'
+          - "<gray>Menjual claim blocks milikmu.</gray>"
+          - "<gray>Harga mengikuti ekonomi server.</gray>"
+      - lines:
+          - "<yellow><bold>Referensi Trust</bold></yellow>"
+          - "<aqua>/trust /containertrust /accesstrust</aqua>"
+          - "<aqua>/permissiontrust /untrust /trustlist</aqua>"
+      - lines:
+          - "<yellow><bold>Referensi Klaim</bold></yellow>"
+          - "<aqua>/claimslist /abandonclaim /abandonallclaims</aqua>"
+          - "<aqua>/buyclaimblocks /sellclaimblocks</aqua>"
+
+  - title: "Custom Pet Egg"
+    pages:
+      - lines:
+          - "<yellow><bold>Pengenalan</bold></yellow>"
+          - "<gray>Sistem Custom Pet Egg memakai Skript dan MCPets.</gray>"
+          - "<gray>Item utama: Shard, Essence, Core, dan Pet Egg.</gray>"
+          - "<gray>Kumpulkan item, siapkan altar, lalu tetaskan pet.</gray>"
+      - lines:
+          - "<yellow><bold>Peluang Drop</bold></yellow>"
+          - "<gray>Peluang drop dari sistem pet:</gray>"
+          - "<gray>Dungeon Chest 5%</gray>"
+          - "<gray>Warden 50%</gray>"
+          - "<gray>Wither 50%</gray>"
+          - "<gray>Elder Guardian 30%</gray>"
+          - "<gray>Evoker 20%</gray>"
+      - lines:
+          - "<yellow><bold>Pet Altar</bold></yellow>"
+          - "<gray>Altar adalah tempat proses Pet Egg.</gray>"
+          - "<gray>Altar mendeteksi beacon di sekitarnya.</gray>"
+          - "<gray>Respawn Anchor bagian dari altar.</gray>"
+          - "<gray>Susunan mengikuti PetsAltar.sk.</gray>"
+      - lines:
+          - "<yellow><bold>Glowstone & Charge</bold></yellow>"
+          - "<gray>Glowstone mengisi charge altar.</gray>"
+          - "<gray>Altar membutuhkan empat charge.</gray>"
+          - "<gray>Setelah empat charge terisi, proses dimulai.</gray>"
+          - "<gray>Durasi mengikuti PetsAltar.sk.</gray>"
+      - lines:
+          - "<yellow><bold>Proses Penetasan</bold></yellow>"
+          - "<gray>- Beacon aktif.</gray>"
+          - "<gray>- Respawn Anchor siap.</gray>"
+          - "<gray>- Empat charge terisi.</gray>"
+          - "<gray>- Hitung mundur.</gray>"
+          - "<gray>- Efek muncul.</gray>"
+          - "<gray>- Notifikasi sukses.</gray>"
+      - lines:
+          - "<yellow><bold>Catatan Altar</bold></yellow>"
+          - "<gray>Durasi, efek, dan susunan altar mengikuti PetsAltar.sk.</gray>"
+          - "<gray>Jika gagal, cek beacon, Respawn Anchor, dan charge.</gray>"
+          - "<gray>Notifikasi muncul saat berhasil.</gray>"
+      - lines:
+          - "<yellow><bold>Pet Tersedia</bold></yellow>"
+          - "<white>Otter</white>"
+          - "<gray>Permission: </gray><aqua>mcpets.otter</aqua>"
+          - "<white>Partridge</white>"
+          - "<gray>Permission: </gray><aqua>pet.partridge</aqua>"
+          - "<gray>Dua pet lain ada di halaman berikut.</gray>"
+      - lines:
+          - "<yellow><bold>Winslow</bold></yellow>"
+          - "<gray>Permission:</gray>"
+          - "<aqua>pet.winslow_the_wandering_trader</aqua>"
+          - "<gray>Gunakan permission ini untuk memakai pet.</gray>"
+      - lines:
+          - "<yellow><bold>Pertwee</bold></yellow>"
+          - "<gray>Permission:</gray>"
+          - "<aqua>pet.pertwee_the_trader_llama</aqua>"
+          - "<gray>Gunakan permission ini untuk memakai pet.</gray>"
+      - lines:
+          - "<yellow><bold>Cara Memperoleh</bold></yellow>"
+          - "<gray>Kumpulkan item.</gray>"
+          - "<gray>Siapkan altar, beacon.</gray>"
+          - "<gray>Isi empat charge.</gray>"
+          - "<gray>Tunggu hitung mundur.</gray>"
+          - "<gray>Pet diterima setelah sukses.</gray>"
+          - "<gray>Pastikan permission pet.</gray>"
+
+  - title: "Jobs & Skills"
+    pages:
+      - lines:
+          - "<yellow><bold>Pengenalan Jobs</bold></yellow>"
+          - "<gray>Sistem jobs memberi pekerjaan.</gray>"
+          - "<gray>Setiap job punya aktivitas dan hadiah.</gray>"
+          - "<gray>Gunakan </gray><aqua>/jobs</aqua><gray> untuk info.</gray>"
+          - "<gray>Detail mengikuti konfigurasi.</gray>"
+      - lines:
+          - "<yellow><bold>Job Tersedia</bold></yellow>"
+          - "<gray>Daftar job aktif dilihat lewat </gray><aqua>/jobs</aqua><gray>.</gray>"
+          - "<gray>Jenis job mengikuti konfigurasi server.</gray>"
+          - "<gray>Pilih job yang sesuai cara bermainmu.</gray>"
+      - lines:
+          - "<yellow><bold>Informasi Job</bold></yellow>"
+          - "<gray>Setiap job menilai aksi tertentu.</gray>"
+          - "<gray>Hadiah dan syarat mengikuti konfigurasi.</gray>"
+          - "<gray>Cek progres lewat </gray><aqua>/jobs</aqua><gray>.</gray>"
+      - lines:
+          - "<yellow><bold>Pengenalan Skills</bold></yellow>"
+          - "<gray>Skills adalah sistem perkembangan pemain.</gray>"
+          - "<gray>Gunakan </gray><aqua>/skill</aqua><gray> untuk melihat progres.</gray>"
+          - "<gray>Jenis skill mengikuti plugin.</gray>"
+      - lines:
+          - "<yellow><bold>Skill Progression</bold></yellow>"
+          - "<gray>Skill berkembang lewat aktivitas terkait.</gray>"
+          - "<gray>Cara naik level mengikuti konfigurasi.</gray>"
+          - "<gray>Gunakan </gray><aqua>/skill</aqua><gray> untuk memantau progres.</gray>"
+      - lines:
+          - "<yellow><bold>Skill Benefits</bold></yellow>"
+          - "<gray>Skill memberi keuntungan sesuai jenisnya.</gray>"
+          - "<gray>Besaran dan efek mengikuti konfigurasi.</gray>"
+          - "<gray>Tanyakan detail ke staff jika belum jelas.</gray>"
+
+  - title: "Server Rules"
+    pages:
+      - lines:
+          - "<yellow><bold>Aturan Umum</bold></yellow>"
+          - "<gray>Aturan resmi server ditetapkan staff.</gray>"
+          - "<gray>Daftar rinci belum ditambahkan ke guide ini.</gray>"
+          - "<gray>Ikuti arahan staff selama bermain.</gray>"
+          - "<gray>Periksa guide secara berkala untuk pembaruan.</gray>"
+      - lines:
+          - "<yellow><bold>Gameplay & Pemain</bold></yellow>"
+          - "<gray>Aturan gameplay ditetapkan staff.</gray>"
+          - "<gray>Norma perilaku ditetapkan staff.</gray>"
+          - "<gray>Daftar rinci belum dipublikasikan di guide ini.</gray>"
+          - "<gray>Ikuti keputusan staff saat bermain.</gray>"
+      - lines:
+          - "<yellow><bold>Bangunan & Sanksi</bold></yellow>"
+          - "<gray>Aturan bangunan ditetapkan staff.</gray>"
+          - "<gray>Jenis sanksi ditentukan staff.</gray>"
+          - "<gray>Daftar sanksi belum dipublikasikan di guide ini.</gray>"
+          - "<gray>Ajukan pertanyaan lewat staff.</gray>"
+
+  - title: "FAQ"
+    pages:
+      - lines:
+          - "<yellow><bold>Pertanyaan Umum</bold></yellow>"
+          - "<white>Bagaimana membuka guide?</white>"
+          - "<gray>Ketik </gray><aqua>/guide</aqua><gray>.</gray>"
+          - "<white>Kenapa command gagal?</white>"
+          - "<gray>Cek izin dan plugin. Hubungi staff jika tetap gagal.</gray>"
+      - lines:
+          - "<yellow><bold>Command</bold></yellow>"
+          - "<white>Bagaimana kembali ke rumah?</white>"
+          - "<gray>Gunakan </gray><aqua>/sethome</aqua><gray> lalu </gray><aqua>/home</aqua><gray>.</gray>"
+          - "<white>Bagaimana teleport ke pemain lain?</white>"
+          - '<gray>Gunakan </gray><aqua>/tpa \<player></aqua><gray>.</gray>'
+      - lines:
+          - "<yellow><bold>Ekonomi</bold></yellow>"
+          - "<white>Di mana melihat toko?</white>"
+          - "<gray>Gunakan </gray><aqua>/shop</aqua><gray>.</gray>"
+          - "<white>Bagaimana menjual item?</white>"
+          - "<gray>Gunakan </gray><aqua>/sell</aqua><gray>.</gray>"
+          - "<white>Di mana info pekerjaan?</white>"
+          - "<gray>Gunakan </gray><aqua>/jobs</aqua><gray>.</gray>"
+      - lines:
+          - "<yellow><bold>Klaim Lahan</bold></yellow>"
+          - "<white>Kenapa klaim gagal?</white>"
+          - "<gray>Cek claim blocks dan area.</gray>"
+          - "<white>Bagaimana memberi akses?</white>"
+          - "<gray>Gunakan </gray><aqua>/trust</aqua><gray> atau </gray><aqua>/containertrust</aqua><gray>.</gray>"
+      - lines:
+          - "<yellow><bold>Custom Pet</bold></yellow>"
+          - "<white>Di mana pet didapat?</white>"
+          - "<gray>Dari Custom Pet Egg.</gray>"
+          - "<white>Kenapa altar tidak jalan?</white>"
+          - "<gray>Cek beacon, anchor, dan charge.</gray>"

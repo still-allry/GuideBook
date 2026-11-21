@@ -1,4 +1,4 @@
-name: "Book Guide"
+name: "BookGuide"
 version: "1.0.0"
 main: com.allry.bookguide.BookGuidePlugin
 api-version: "1.21"
